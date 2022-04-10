@@ -2,4 +2,4 @@ wine x2
 cereal x1
 milk x3
 beer x5
-chips x4
+chips x10
