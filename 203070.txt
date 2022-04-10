@@ -1,0 +1,129 @@
+4. git clone https://github.com/DusanTemelkovski/SI_2022_lab1_203070.git
+5. git add .
+   git commit -m "Add 5 items to the shopping list"
+6. git add .
+   git commit -m "Add quantities to the items."
+7. git branch branch1
+   git branch branch2
+8. git log
+commit 1378a2cb20ed00ef6b4cb787225205335f254c60 (HEAD -> master, branch2, branch1)
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:42:39 2022 +0200
+
+    Add quantities to the items.
+
+commit e1444c21bacf8acbd128b5eceb3ee4849cc2ebeb
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:41:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 1d5f831be9064ebfc88badd8a95d4d765f3190f1 (origin/master, origin/HEAD)
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:38:42 2022 +0200
+
+    Initial commit
+
+commit 18011f4b45ee589ab456e1a65ccf39372b6a3b36
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:37:50 2022 +0200
+
+    Initial commit
+9. git push
+   git push origin branch1
+   git push origin branch2
+10.git checkout branch1
+11.git add .
+   git commit -m "Change quantity of item #5"
+12.git checkout master
+13.git add .
+   git commit -m "Change quantity of item #2"
+14.git push
+   git push origin branch1
+   git push origin branch2
+15.git checkout branch2
+16.git add .
+   git commit -m "Modify item #4"
+17.git log
+commit 1b4e71a27da0e83cf143f93ef37729c3b292f971 (HEAD -> branch2)
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:50:11 2022 +0200
+
+    Modify item #4
+
+commit 1378a2cb20ed00ef6b4cb787225205335f254c60 (origin/branch2)
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:42:39 2022 +0200
+
+    Add quantities to the items.
+
+commit e1444c21bacf8acbd128b5eceb3ee4849cc2ebeb
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:41:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 1d5f831be9064ebfc88badd8a95d4d765f3190f1
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:38:42 2022 +0200
+
+    Initial commit
+
+commit 18011f4b45ee589ab456e1a65ccf39372b6a3b36
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:37:50 2022 +0200
+
+    Initial commit
+18.git rebase -i HEAD~1
+   git add .
+   git commit --amend
+   git rebase --continue
+19.git log
+commit d6dd0e5761fb53ee3912feb5d10ac8a481901f41 (HEAD -> branch2)
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:50:11 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 1378a2cb20ed00ef6b4cb787225205335f254c60 (origin/branch2)
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:42:39 2022 +0200
+
+    Add quantities to the items.
+
+commit e1444c21bacf8acbd128b5eceb3ee4849cc2ebeb
+Author: unknown <duskotemelkovski@gmail.com>
+Date:   Sun Apr 10 18:41:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 1d5f831be9064ebfc88badd8a95d4d765f3190f1
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:38:42 2022 +0200
+
+    Initial commit
+
+commit 18011f4b45ee589ab456e1a65ccf39372b6a3b36
+Author: DusanTemelkovski <100302884+DusanTemelkovski@users.noreply.github.com>
+Date:   Sun Apr 10 18:37:50 2022 +0200
+
+    Initial commit
+20.git checkout master
+   git merge branch1
+   Дали се случиле конфликти при извршување на наредбата?-Не
+   Ако се случиле, како сте ги решиле (начинот за решавање на конфликти
+определете го сами како избор на еден од можните начини)?-Не се случил конфликт
+   Која стратегија била употребена за да се изврши спојувањето?-Fast Forwarding
+21.Дали се случиле конфликти при извршување на наредбата?-Да
+   Ако се случиле, како сте ги решиле (начинот за решавање на конфликти
+определете го сами како избор на еден од можните начини)?-Проблемот го разрешив користејки го едиторот и командите git add . и git --continue
+   Која стратегија била употребена за да се изврши спојувањето?-Рекурзивна стратегија
+   git rebase branch2
+   git add .
+   git rebase --continue
+22.git add 203070.txt
+   git commit -m "Add docs"
+23.git pull
+   git push
+   git push origin branch1
+   git push origin branch2
