@@ -1,5 +1,5 @@
-wine
-cereal
-milk
-beer
-chips
+wine x2
+cereal x1
+milk x3
+beer x5
+chips x4
